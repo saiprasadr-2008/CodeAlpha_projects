@@ -1,0 +1,103 @@
+import type { Language, LanguageCode, LessonTopicInfo } from '../types/language';
+
+export const SUPPORTED_LANGUAGES: Record<LanguageCode, Language> = {
+  en: {
+    code: 'en',
+    name: 'English',
+    nativeName: 'English',
+    flag: '🇬🇧',
+    speechCode: 'en-US',
+    scriptDirection: 'ltr',
+    description: 'Global lingua franca for business, travel, and international communication.',
+  },
+  es: {
+    code: 'es',
+    name: 'Spanish',
+    nativeName: 'Español',
+    flag: '🇪🇸',
+    speechCode: 'es-ES',
+    scriptDirection: 'ltr',
+    description: 'Vibrant Romance language spoken by over 500 million people across Europe and the Americas.',
+  },
+  hi: {
+    code: 'hi',
+    name: 'Hindi',
+    nativeName: 'हिन्दी',
+    flag: '🇮🇳',
+    speechCode: 'hi-IN',
+    scriptDirection: 'ltr',
+    description: 'Official language of India written in Devanagari script, rich with poetic expressions and cultural warmth.',
+  },
+  ta: {
+    code: 'ta',
+    name: 'Tamil',
+    nativeName: 'தமிழ்',
+    flag: '🇮🇳',
+    speechCode: 'ta-IN',
+    scriptDirection: 'ltr',
+    description: 'One of the world’s oldest living classical languages, spoken in Tamil Nadu, Sri Lanka, Singapore, and Malaysia.',
+  },
+  fr: {
+    code: 'fr',
+    name: 'French',
+    nativeName: 'Français',
+    flag: '🇫🇷',
+    speechCode: 'fr-FR',
+    scriptDirection: 'ltr',
+    description: 'Language of diplomacy, gastronomy, fashion, and international literature.',
+  },
+  ja: {
+    code: 'ja',
+    name: 'Japanese',
+    nativeName: '日本語',
+    flag: '🇯🇵',
+    speechCode: 'ja-JP',
+    scriptDirection: 'ltr',
+    description: 'Fascinating language of Japan featuring Kanji, Hiragana, Katakana, and nuanced politeness registers.',
+  },
+};
+
+export const LESSON_TOPICS: LessonTopicInfo[] = [
+  {
+    id: 'introductions',
+    title: 'Introductions & Greetings',
+    description: 'Master first impressions, polite greetings, name introductions, and asking how someone is doing.',
+    iconName: 'Users',
+    level: 'Beginner',
+  },
+  {
+    id: 'shopping',
+    title: 'Shopping & Market',
+    description: 'Navigate markets, ask prices, negotiate, specify sizes and colors, and make payments with confidence.',
+    iconName: 'ShoppingBag',
+    level: 'Beginner',
+  },
+  {
+    id: 'travel',
+    title: 'Travel & Commuting',
+    description: 'Ask for directions, buy tickets at train stations or airports, and find landmarks in a new city.',
+    iconName: 'Compass',
+    level: 'Beginner',
+  },
+  {
+    id: 'food',
+    title: 'Food & Dining Out',
+    description: 'Order authentic meals, express dietary preferences, ask for the bill, and compliment the chef.',
+    iconName: 'UtensilsCrossed',
+    level: 'Beginner',
+  },
+  {
+    id: 'college',
+    title: 'College & Student Life',
+    description: 'Campus interactions, library discussions, asking professors questions, and collaborating on projects.',
+    iconName: 'GraduationCap',
+    level: 'Intermediate',
+  },
+  {
+    id: 'job_interview',
+    title: 'Job Interview & Careers',
+    description: 'Professional greetings, describing skills and background, responding to interviewers, and salary etiquette.',
+    iconName: 'Briefcase',
+    level: 'Intermediate',
+  },
+];
